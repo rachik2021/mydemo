@@ -12,11 +12,11 @@
         "ActiveRetentionPolicy": "CleanEndedOK",
         "SiteStandard": "rac-blank",
 		
-		"EchoJob": {
+		"DemoJob": {
 			"Type" : "Job:Command",
 			"Host": "zzz-linux-agents",
 			"RunAs": "ctmsand",
-			"Command" : "echo hello",
+			"Command" : "uname -a",
 			"RunAs" : "ctmsand"
 		}	
 	}
