@@ -1,0 +1,25 @@
+{
+
+	"Defaults" : {
+		"Application": "rac-app",
+		"SubApplication": "rac-lab3"	
+	},
+
+   "rac_FIRST_JOB_FLOW": {
+		"Type": "Folder",
+		"ControlmServer": "Sandbox",
+        "OrderMethod": "Manual",
+        "ActiveRetentionPolicy": "CleanEndedOK",
+        "SiteStandard": "rac-blank",
+		
+		"EchoJob": {
+			"Type" : "Job:Command",
+			"Host": "zzz-linux-agents",
+			"RunAs": "ctmsand",
+			"Command" : "echo hello",
+			"RunAs" : "ctmsand"
+		}	
+	}
+		
+}
+
